@@ -1,15 +1,14 @@
 package mockitopackage;
 
-import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
-
-import java.util.Iterator;
-
 import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Matchers;
 import org.mockito.Mockito;
-import mockitopackage.TestService;
+
+import java.util.Iterator;
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
 
 /**
  * The Class JUnitServiceTestExample.
