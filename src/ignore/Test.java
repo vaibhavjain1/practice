@@ -6,7 +6,6 @@ import java.util.*;
 public class Test {
 
     public static void main(String[] args) throws Exception{
-    	System.out.println(com.mysql.jdbc.Blob.class.getClassLoader());
     	// Input can be only Even numbers.
           puzzle(1000);
           }
