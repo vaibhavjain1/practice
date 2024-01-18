@@ -1,3 +1,4 @@
+package accolite;
 
 import java.awt.GridLayout;
 
@@ -9,7 +10,6 @@ import javax.swing.table.TableModel;
 import java.awt.Component;
 
 import javax.swing.ImageIcon;
-import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
  class MyRenderer extends DefaultTableCellRenderer {
@@ -27,7 +27,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 	  }
 	}
 
-public class Sample {
+public class FrameRenderer {
 
   public static void main(String[] args) {
     JFrame f = new JFrame("Sample");
