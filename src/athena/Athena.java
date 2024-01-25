@@ -12,8 +12,8 @@ public class Athena {
 		Class.forName("com.simba.athena.jdbc.Driver");
 		
 		Properties prop = new Properties();
-		prop.setProperty("user", "AKIAJEMLBCFZBHRUBGYQ");
-		prop.setProperty("password", "WDzunVggwSLUnC0hmYbUe9p5qP6VVHfpZnPDFTLE");
+		prop.setProperty("user", "");
+		prop.setProperty("password", "");
 		prop.put("S3OutputLocation", "s3://adsathenaresults/results/");
 		
 		Connection conn = null;
@@ -27,7 +27,7 @@ public class Athena {
 				System.out.println(rs.getString("sales_reason"));
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println("Exception: " + e);
 		} finally {
 			if(rs!=null)
 				rs.close();
