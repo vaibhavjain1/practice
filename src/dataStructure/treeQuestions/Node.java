@@ -1,4 +1,4 @@
-package geeksForGeeks.treeQuestions;
+package dataStructure.treeQuestions;
 
 import java.util.ArrayList;
 import java.util.List;

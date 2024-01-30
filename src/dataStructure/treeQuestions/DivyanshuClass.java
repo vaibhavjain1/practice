@@ -1,6 +1,5 @@
-package geeksForGeeks.treeQuestions;
+package dataStructure.treeQuestions;
 
-import java.awt.geom.QuadCurve2D;
 import java.util.*;
 
 public class DivyanshuClass {

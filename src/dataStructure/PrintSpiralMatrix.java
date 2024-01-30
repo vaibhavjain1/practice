@@ -1,4 +1,4 @@
-package geeksForGeeks;
+package dataStructure;
 
 public class PrintSpiralMatrix {
 

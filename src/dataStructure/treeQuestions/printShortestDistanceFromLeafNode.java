@@ -1,4 +1,4 @@
-package geeksForGeeks.treeQuestions;
+package dataStructure.treeQuestions;
 
 public class printShortestDistanceFromLeafNode {
 
