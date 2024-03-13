@@ -1,24 +1,24 @@
 package testing;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorUnitTestCases {
-	static Calculator1 obj;
-	 @Test
-	    public void testConcatenate() {
- int result = obj.add(1,2);
+    static Calculator1 obj;
 
-	        assertEquals(3, result);
+    @Test
+    public void testConcatenate() {
+        int result = obj.add(1, 2);
 
-	    }
-	 
-	 @BeforeClass
-	 public static void testMul(){
-		 obj = new Calculator1();
-	        
-	 }
+        assertEquals(3, result);
+
+    }
+
+    @BeforeAll
+    public static void testMul() {
+        obj = new Calculator1();
+
+    }
 }

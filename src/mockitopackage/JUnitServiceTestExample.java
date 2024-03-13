@@ -1,13 +1,13 @@
 package mockitopackage;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import org.mockito.Matchers;
 import org.mockito.Mockito;
 
 import java.util.Iterator;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 /**
@@ -34,7 +34,7 @@ public class JUnitServiceTestExample {
 	 * Test more than one return value.
 	 */
 	// Demonstrates the return of multiple values
-	@Ignore
+	@Disabled
 	@Test
 	public void testMoreThanOneReturnValue() {
 		Iterator i = mock(Iterator.class);
@@ -46,7 +46,7 @@ public class JUnitServiceTestExample {
 	/**
 	 * Test return value dependent on method parameter.
 	 */
-	@Ignore
+	@Disabled
 	@Test
 	public void testReturnValueDependentOnMethodParameter() {
 		Comparable c = mock(Comparable.class);
@@ -59,7 +59,7 @@ public class JUnitServiceTestExample {
 	/**
 	 * Test return value in dependent on method parameter.
 	 */
-	@Ignore
+	@Disabled
 	@Test
 	public void testReturnValueInDependentOnMethodParameter() {
 		Comparable c = mock(Comparable.class);
@@ -67,7 +67,7 @@ public class JUnitServiceTestExample {
 		assertEquals(-1, c.compareTo(9));
 	}
 
-	@Ignore
+	@Disabled
 	@Test
 	public void testVerify() {
 		// create and configure mock
