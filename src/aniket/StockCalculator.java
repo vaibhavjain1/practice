@@ -15,7 +15,7 @@ public class StockCalculator {
     void fetchData(){
         ObjectMapper mapper = new ObjectMapper();
         try {
-            File jsonInputFile = new File("practice/resources/Response_HDFCBANK.txt");
+            File jsonInputFile = new File("practice/resources/HDFCBANK_FAIL.txt");
             resp = mapper.readValue(jsonInputFile, StockResp.class);
             for (Data data: resp.getData()){
                 data.setDate(new Date(data.getTime()));
@@ -53,6 +53,10 @@ public class StockCalculator {
         System.out.println("52 Week Low: " + weekLow52Price);
         String isCurrentGreaterthan125from52WeekLow = currentPrice > weekLow52Price * 1.25 ? "Yes" : "NO";
         System.out.println("Current price above 25% from 52 Week Low: " + isCurrentGreaterthan125from52WeekLow);
+
+        double answer = (currentPrice - weekLow52Price)/weekLow52Price * 100;
+        System.out.println("Percentage: " + answer);
+        System.out.print(answer > 500 ? "Yes" : "No");
     }
 
 
